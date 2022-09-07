@@ -37,7 +37,13 @@ class HandleInertiaRequests extends Middleware
     public function share(Request $request): array
     {
         return array_merge(parent::share($request), [
-            //
+            // version
+            'version' => function () {
+                return [
+                    'versionnr' => config('newspilot.version.versionnr'),
+                    'versionsdatum' => config('newspilot.version.versionsdatum'),
+                ];
+            },
         ]);
     }
 }
