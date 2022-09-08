@@ -14,20 +14,12 @@
     >
       <nav class="container mx-auto px-2 lg:px-8 py-2.5 rounded">
         <div class="flex flex-wrap justify-between items-center mx-auto">
-          <a href="#" class="flex items-center">
-            <favicon class="h-8 w-8 md:h-12 md:w-12 mr-1" />
-            <span
-              class="
-                self-center
-                text-xl
-                font-semibold
-                whitespace-nowrap
-                dark:text-white
-                font-logo
-              "
-              >Newspilot</span
-            >
-          </a>
+          <company-name
+            :with-favicon="true"
+            :with-link="true"
+            :with-slogan="true"
+            route-name="home"
+          ></company-name>
           <div class="flex md:order-2 items-center">
             <button-register-now></button-register-now>
             <button
@@ -257,6 +249,8 @@ import ButtonChangeMode from "@/Pages/Components/ButtonChangeMode.vue";
 
 import Toast from "@/Pages/Components/Content/Toast.vue";
 
+import CompanyName from "@/Pages/Components/Content/CompanyName.vue";
+
 export default {
   name: "Homepage_Layout",
 
@@ -270,7 +264,8 @@ export default {
     IconMenu,
     IconClose,
     ButtonChangeMode,
-    Toast
+    Toast,
+    CompanyName,
   },
 
   setup() {

@@ -1,3 +1,3 @@
-# Privacy Policy
+# Datenschutzerklärung
 
-Edit this file to define the privacy policy for your application.
+Bearbeiten Sie diese Datei, um die Datenschutzerklärung für Ihre Anwendung zu definieren.

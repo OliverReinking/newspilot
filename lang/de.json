@@ -1,4 +1,12 @@
 {
+    "Africa": "Afrika",
+    "Antarctica": "Antarctica",
+    "Asia": "Asien",
+    "Australia/Oceania": "Australien/Ozeanien",
+    "Europe": "Europa",
+    "North America": "Nordamerika",
+    "South America": "Südamerika",
+
     "(and :count more error)": "(and :count more error)",
     "(and :count more errors)": "(and :count more errors)",
     "A new verification link has been sent to the email address you provided in your profile settings.": "Ein neuer Bestätigungslink wurde an die E-Mail-Adresse, die in Ihrem Profil hinterlegt ist, gesendet.",
