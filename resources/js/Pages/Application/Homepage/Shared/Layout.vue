@@ -158,6 +158,7 @@
       "
     >
       <div class="container mx-auto px-2 lg:px-8 pt-2 lg:pt-8">
+        <toast></toast>
         <slot></slot>
       </div>
     </section>
@@ -254,6 +255,8 @@ import IconClose from "@/Pages/Components/Icons/Close.vue";
 
 import ButtonChangeMode from "@/Pages/Components/ButtonChangeMode.vue";
 
+import Toast from "@/Pages/Components/Content/Toast.vue";
+
 export default {
   name: "Homepage_Layout",
 
@@ -267,6 +270,7 @@ export default {
     IconMenu,
     IconClose,
     ButtonChangeMode,
+    Toast
   },
 
   setup() {
