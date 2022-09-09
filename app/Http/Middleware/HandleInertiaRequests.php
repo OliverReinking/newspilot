@@ -50,6 +50,24 @@ class HandleInertiaRequests extends Middleware
                     'versionsdatum' => config('newspilot.version.versionsdatum'),
                 ];
             },
+            // navtype
+            'navtype' => function () {
+                return [
+                    'nav_header' => 'header',
+                    'nav_sidebar' => 'sidebar',
+                ];
+            },
+            // applications
+            'applications' => function () {
+                return [
+                    'app_admin' => 'admin',
+                    'app_employee' => 'employee',
+                    'app_customer' => 'custoner',
+                    'app_admin_name' => 'Administrator-Dashboard',
+                    'app_employee_name' => 'Mitarbeiter-Dashboard',
+                    'app_customer_name' => 'Kunden-Dashboard',
+                ];
+            },
         ]);
     }
 }
