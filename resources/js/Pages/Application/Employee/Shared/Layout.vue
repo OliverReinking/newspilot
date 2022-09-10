@@ -10,23 +10,31 @@
         dark:bg-gray-700 dark:text-gray-100
       "
     >
-      <admin-sidebar
+      <employee-sidebar
         :is-sidebar-open="isSidebarOpen"
         @changeSidebarValue="changeSidebarOpen"
-      ></admin-sidebar>
+      ></employee-sidebar>
       <div class="flex-1 flex flex-col overflow-hidden">
-        <admin-header
+        <employee-header
           :mode="mode"
           :is-sidebar-open="isSidebarOpen"
           @changeSidebarValue="changeSidebarOpen"
           @changeDarkLight="changeMode"
-        ></admin-header>
+        ></employee-header>
         <main class="flex-1 overflow-x-hidden overflow-y-auto">
-          <div class="container px-6 py-8">
+          <div
+            class="
+              container
+              mx-auto
+              w-full
+              md:max-w-5xl
+              px-2
+              py-4
+              md:px-6 md:py-8
+            "
+          >
             <toast class="mb-6"></toast>
-            <div class="mb-6">
-              <slot />
-            </div>
+            <slot />
           </div>
           <div
             class="
@@ -34,17 +42,18 @@
               bottom-0
               left-0
               right-0
-              bg-gray-100
-              dark:bg-gray-900
-              text-gray-900
-              dark:text-gray-100
+              z-20
+              bg-gray-900
+              dark:bg-white
+              text-white
+              dark:text-gray-900
             "
           >
             <div class="lg:mr-12 p-2 text-center lg:text-right text-xs">
               Version: {{ $page.props.version.versionnr }} vom
               {{ $page.props.version.versionsdatum }}
               <br />
-              {{ $page.props.applications.app_admin_name }}
+              {{ $page.props.applications.app_employee_name }}
             </div>
           </div>
         </main>
@@ -55,17 +64,17 @@
 <script>
 import { defineComponent, ref } from "vue";
 
-import AdminSidebar from "@/Pages/Application/Admin/Shared/Sidebar.vue";
-import AdminHeader from "@/Pages/Application/Admin/Shared/Header.vue";
+import EmployeeSidebar from "@/Pages/Application/Employee/Shared/Sidebar.vue";
+import EmployeeHeader from "@/Pages/Application/Employee/Shared/Header.vue";
 
 import Toast from "@/Pages/Components/Content/Toast.vue";
 
 export default defineComponent({
-  name: "Admin_Layout",
+  name: "Employee_Layout",
 
   components: {
-    AdminSidebar,
-    AdminHeader,
+    EmployeeSidebar,
+    EmployeeHeader,
     Toast,
   },
 
@@ -78,12 +87,10 @@ export default defineComponent({
     }
     //
     function changeSidebarOpen(newValue) {
-      console.log("Admin Layout.vue changeSidebarOpen:", newValue);
       isSidebarOpen.value = newValue;
     }
     //
     function changeMode(newValue) {
-      console.log("Admin Layout.vue changeMode:", newValue);
       mode.value = newValue;
       //
       localStorage.theme = mode.value;
