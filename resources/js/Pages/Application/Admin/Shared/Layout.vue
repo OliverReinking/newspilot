@@ -16,6 +16,7 @@
                     class="flex-1 overflow-x-hidden overflow-y-auto"
                 >
                     <div class="container px-6 py-8">
+                         <toast class="mb-6"></toast>
                         <slot />
                     </div>
                 </main>
@@ -29,12 +30,15 @@ import { defineComponent, ref } from "vue";
 import AdminSidebar from "@/Pages/Application/Admin/Shared/Sidebar.vue";
 import AdminHeader from "@/Pages/Application/Admin/Shared/Header.vue";
 
+import Toast from "@/Pages/Components/Content/Toast.vue";
+
 export default defineComponent({
     name: "Admin_Layout",
 
     components: {
         AdminSidebar,
         AdminHeader,
+        Toast
     },
 
     setup() {

@@ -2,8 +2,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-
-    darkMode: 'class',
+    darkMode: "class",
 
     content: [
         "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
@@ -16,8 +15,19 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                'primary': '#22C55E',
-                'primary-dark': '#DCFCE7'
+                sunprimary: "#22C55E",
+                "sunprimary-dark": "#15803D",
+                "sunprimary-light": "#86EFAC",
+                "on-sunprimary": "#1F2937",
+                "on-sunprimary-light": "#1F2937",
+                "on-sunprimary-dark": "#1F2937",
+                //
+                nightprimary: "#22C55E",
+                "nightprimary-dark": "#86EFAC",
+                "nightprimary-light": "#15803D",
+                "on-nightprimary": "#1F2937",
+                "on-nightprimary-light": "#1F2937",
+                "on-nightprimary-dark": "#1F2937",
             },
             fontFamily: {
                 sans: ["Inter", ...defaultTheme.fontFamily.sans],

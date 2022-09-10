@@ -18,6 +18,7 @@ import IconCollection from "@/Pages/Components/Icons/Collection.vue";
 import IconNewspaper from "@/Pages/Components/Icons/Newspaper.vue";
 import IconUsers from "@/Pages/Components/Icons/Users.vue";
 import IconViewGrid from "@/Pages/Components/Icons/ViewGrid.vue";
+import IconDocumentText from "@/Pages/Components/Icons/DocumentText.vue";
 
 export default defineComponent({
   name: "Component_SidebarLink",
@@ -30,6 +31,7 @@ export default defineComponent({
     IconNewspaper,
     IconUsers,
     IconViewGrid,
+    IconDocumentText,
   },
 
   props: {

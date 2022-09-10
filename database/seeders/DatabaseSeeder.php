@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,6 +14,15 @@ class DatabaseSeeder extends Seeder
      *
      * @return void
      */
+    public function run()
+    {
+        $this->call(AdminSeeder::class);
+        $this->call(TestData::class);
+    }
+}
+
+class AdminSeeder extends Seeder
+{
     public function run()
     {
         // Create Administrator
@@ -26,5 +35,13 @@ class DatabaseSeeder extends Seeder
             'is_employee' => false,
             'is_customer' => true,
         ]);
+    }
+}
+class TestData extends Seeder
+{
+    public function run()
+    {
+        // Lege 1500 Anwender an
+        User::factory()->times(1500)->create();
     }
 }

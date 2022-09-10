@@ -3,6 +3,7 @@
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\DashboardCustomerController;
@@ -62,6 +63,27 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
             '/admin/dashboard',
             [DashboardAdminController::class, 'admin_index']
         )->name('admin.dashboard');
+        // -----
+        // Users
+        // -----
+        // Liste der Anwender
+        Route::get('/admin/users/index', [UserController::class, 'admin_user_index'])
+            ->name('admin.user.index')->middleware('remember');
+        // Display der Anwender
+        Route::get('/admin/users/show/{appuser}', [UserController::class, 'admin_user_show'])
+            ->name('admin.user.show');
+        // Edit der Anwenderdaten
+        Route::get('/admin/users/{appuser}/edit', [UserController::class, 'admin_user_edit'])
+            ->name('admin.user.edit');
+        // Update der Anwenderdaten
+        Route::put('/admin/users/{appuser}', [UserController::class, 'admin_user_update'])
+            ->name('admin.user.update');
+        // User Delete
+        Route::delete('/admin/users/{appuser}', [UserController::class, 'admin_user_delete'])
+            ->name('admin.user.delete');
+        // Übersicht Dokumentation
+        Route::get('/admin/documentation', [DashboardAdminController::class, 'admin_documentation'])
+            ->name('admin.documentation');
         // =======
         // Profile
         // =======

@@ -1,0 +1,81 @@
+@layer utilities {
+    .np-dl-outer-container {
+        @apply p-4 bg-white dark:bg-gray-800 rounded shadow-xl;
+    }
+
+    .np-dl-data-container {
+        @apply p-1 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 rounded shadow overflow-x-auto overflow-y-hidden;
+    }
+
+    .np-dl-title {
+        @apply px-2 mt-2 mb-4 text-xl font-bold font-logo;
+    }
+
+    @screen md {
+        .np-dl-title {
+            @apply text-3xl;
+       }
+    }
+
+    .np-dl-table {
+        @apply w-full text-xs overflow-y-auto;
+    }
+
+    @screen md {
+        .np-dl-table {
+            @apply text-sm;
+       }
+    }
+
+    .np-dl-thead {
+        @apply text-left font-bold;
+    }
+
+    .np-dl-th-normal {
+        @apply px-2 pt-2 pb-2 text-left align-top;
+    }
+
+    .np-dl-th--small {
+        @apply text-xs;
+    }
+
+    .np-dl-th-center {
+        @apply px-2 pt-2 pb-2 text-center align-top;
+    }
+
+    .np-dl-tr:hover {
+        @apply bg-sunprimary-light text-on-sunprimary-light dark:bg-nightprimary-light dark:text-on-nightprimary-light;
+    }
+
+    .np-dl-tr:hover:focus-within {
+        @apply text-on-sunprimary-light dark:text-on-nightprimary-light;
+    }
+
+    .np-dl-td-normal {
+        @apply align-middle border-t border-gray-200 dark:border-gray-900 text-left px-2 py-1;
+    }
+
+    .np-dl-td-center {
+        @apply align-middle border-t border-gray-200 dark:border-gray-900 text-center px-2 py-1;
+    }
+
+    .np-dl-td-edit {
+        @apply align-middle border-t border-gray-200 dark:border-gray-900 w-px px-4 cursor-pointer;
+    }
+
+    .np-dl-td--small {
+        @apply text-xs;
+    }
+
+    .np-dl-container-filtername {
+        @apply mb-6 h-12 bg-white rounded shadow overflow-y-auto overflow-x-hidden flex items-center;
+    }
+
+    .np-dl-filtername {
+        @apply px-2 flex-1 text-sm tracking-wide;
+    }
+
+    .np-dl-td-no-entries {
+        @apply border-t px-2 py-2;
+    }
+}

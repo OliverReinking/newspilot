@@ -36,7 +36,7 @@
                 ></sidebar-link>
                 <sidebar-link
                     icon="icon-users"
-                    route-name="admin.dashboard"
+                    route-name="admin.user.index"
                     label="Anwender"
                 ></sidebar-link>
                 <sidebar-link
@@ -53,6 +53,11 @@
                     icon="icon-chart-pie"
                     route-name="admin.dashboard"
                     label="Statistik"
+                ></sidebar-link>
+                 <sidebar-link
+                    icon="icon-document-text"
+                    route-name="admin.documentation"
+                    label="Dokumentation"
                 ></sidebar-link>
                 <application-switch
                     v-if="
