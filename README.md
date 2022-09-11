@@ -1,6 +1,7 @@
 # Newspilot
 
-Das **Newspilot** besteht aus:
+## Bestandteile
+Die Plattform **Newspilot** besteht aus:
 - Laravel 9
 - Vue.js 3
 - Inertia
@@ -15,22 +16,22 @@ Das **Newspilot** besteht aus:
 
 Damit du die Möglichkeit hast, die Entwicklung der Anwendungsplattform Newspilot nachzuvollziehen, habe ich unterschiedliche Entwicklungszustände in Branches dokumentiert.
 
-### Installation
+### Branch Installation
 Die im Kapitel "Implementierung" beschriebenen Codeänderungen findest du im Branch "installation".  
 
-### Bewerbungsformular
+### Branch Bewerbungsformular
 Das im Kapitel Anwendung "Homepage" beschriebene Bewerbungsformular findest du im Branch "formular".
 
-### Anwendung Homepage
+### Branch Anwendung Homepage
 Die im Kapitel Anwendung "Homepage" beschriebenen Codeänderungen findest du im Branch "homepage".  
 
-### Anwendung Administrator
+### Branch Anwendung Administrator
 Die im Kapitel Anwendung "Administrator" beschriebenen Codeänderungen findest du im Branch "administrator".  
 
-### Anwendung Mitarbeiter
+### Branch Anwendung Mitarbeiter
 Die im Kapitel Anwendung "Mitarbeiter" beschriebenen Codeänderungen findest du im Branch "employee".  
 
-## Installation
+## Die Installation
 
 ### 1. Newspilot clonen
 
