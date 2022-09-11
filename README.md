@@ -75,7 +75,7 @@ php artisan db:seed
 Damit ist die Anwendung **Newspilot** installiert.
 
 ```md
-npm run watch
+npm run dev
 ```
 
 Anwendung im Browser aufrufen mit **newspilot.test**
