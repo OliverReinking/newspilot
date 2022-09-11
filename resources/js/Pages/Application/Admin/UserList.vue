@@ -1,5 +1,9 @@
 <template>
   <admin-layout>
+    <breadcrumb
+      :application-name="$page.props.applications.app_admin"
+      current="Liste"
+    ></breadcrumb>
     <!-- Anzeige der Anwenderlisteliste -->
     <section class="mt-8">
       <list-container
@@ -58,6 +62,7 @@
 import { defineComponent } from "vue";
 
 import AdminLayout from "@/Pages/Application/Admin/Shared/Layout.vue";
+import Breadcrumb from "@/Pages/Components/Breadcrumb.vue";
 
 import ListContainer from "@/Pages/Components/Lists/ListContainer.vue";
 import DisplayDate from "@/Pages/Components/Content/DisplayDate.vue";
@@ -68,6 +73,7 @@ export default defineComponent({
 
   components: {
     AdminLayout,
+    Breadcrumb,
     ListContainer,
     DisplayDate,
     DisplayYesOrNo,

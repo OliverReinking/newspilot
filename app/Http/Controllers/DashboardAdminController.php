@@ -26,6 +26,24 @@ class DashboardAdminController extends Controller
         ]);
     }
 
+    public function admin_processes()
+    {
+        //
+        return Inertia::render('Application/Admin/Processes');
+    }
+
+    public function admin_blogs()
+    {
+        //
+        return Inertia::render('Application/Admin/Blogs');
+    }
+
+    public function admin_statistics()
+    {
+        //
+        return Inertia::render('Application/Admin/Statistics');
+    }
+
     public function admin_documentation(Request $request)
     {
         $documentationFile = Jetstream::localizedMarkdownPath('documentation.md');

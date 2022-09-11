@@ -41,17 +41,17 @@
                 ></sidebar-link>
                 <sidebar-link
                     icon="icon-collection"
-                    route-name="admin.dashboard"
+                    route-name="admin.processes"
                     label="Prozesse"
                 ></sidebar-link>
                 <sidebar-link
                     icon="icon-newspaper"
-                    route-name="admin.dashboard"
+                    route-name="admin.blogs"
                     label="Blog"
                 ></sidebar-link>
                 <sidebar-link
                     icon="icon-chart-pie"
-                    route-name="admin.dashboard"
+                    route-name="admin.statistics"
                     label="Statistik"
                 ></sidebar-link>
                  <sidebar-link

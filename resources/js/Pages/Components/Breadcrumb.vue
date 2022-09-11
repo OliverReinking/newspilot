@@ -7,26 +7,41 @@
       bg-white
       rounded-lg
       border border-gray-200
-      dark:bg-gray-800 dark:border-gray-700
+      dark:bg-gray-900 dark:border-gray-700
     "
     aria-label="Breadcrumb"
   >
     <ol class="inline-flex items-center space-x-1 md:space-x-3">
-      <li class="inline-flex items-center">
+      <li v-if="!startPage">
         <Link
           :href="route(routeDashboard)"
           class="
-            inline-flex
+            flex
             items-center
-            text-sm
-            font-medium
             hover:text-gray-900
             dark:hover:text-white
+            underline
           "
         >
-          <icon-home class="w-5 h-5 mr-2" />
-          {{ home }}
+          <icon-home class="w-5 h-5" />
+          <span class="ml-1 text-sm font-medium md:ml-2">{{ home }}</span>
         </Link>
+      </li>
+      <li v-if="startPage">
+        <div class="flex items-center">
+          <icon-home class="w-5 h-5 text-gray-400 dark:text-gray-300" />
+          <span
+            class="
+              ml-1
+              text-sm
+              font-medium
+              text-gray-400
+              md:ml-2
+              dark:text-gray-200
+            "
+            >{{ home }}</span
+          >
+        </div>
       </li>
       <li v-for="(value, key, index) in breadcrumbs" :key="index">
         <div class="flex items-center">
@@ -42,6 +57,7 @@
               hover:text-gray-900
               md:ml-2
               dark:hover:text-white
+              underline
             "
             >{{ key }}</Link
           >
@@ -59,7 +75,7 @@
               font-medium
               text-gray-400
               md:ml-2
-              dark:text-gray-500
+              dark:text-gray-300
             "
             >{{ current }}</span
           >
@@ -97,6 +113,10 @@ export default {
     },
     breadcrumbs: {
       type: Object,
+    },
+    startPage: {
+      type: Boolean,
+      default: false,
     },
   },
 

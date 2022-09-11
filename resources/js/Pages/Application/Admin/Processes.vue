@@ -2,12 +2,10 @@
   <admin-layout>
     <breadcrumb
       :application-name="$page.props.applications.app_admin"
-      current="Dokumentation"
+      current="Prozesse"
     ></breadcrumb>
 
-    <div class="mt-8">
-      <markdown :markdown="documentation"></markdown>
-    </div>
+    <page-title> Prozesse </page-title>
   </admin-layout>
 </template>
 <script>
@@ -16,15 +14,15 @@ import { defineComponent } from "vue";
 import AdminLayout from "@/Pages/Application/Admin/Shared/Layout.vue";
 import Breadcrumb from "@/Pages/Components/Breadcrumb.vue";
 
-import Markdown from "@/Pages/Components/Content/Markdown.vue";
+import PageTitle from "@/Pages/Components/Content/PageTitle.vue";
 
 export default defineComponent({
-  name: "Admin_Documentation",
+  name: "Admin_Processes",
 
   components: {
     AdminLayout,
     Breadcrumb,
-    Markdown,
+    PageTitle,
   },
 
   props: {

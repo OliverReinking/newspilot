@@ -1,20 +1,30 @@
 <template>
     <employee-layout>
-        <div class="mt-4 font-logo text-2xl text-extrabold text-center">
+        <breadcrumb
+            :application-name="$page.props.applications.app_employee"
+            :start-page="true"
+        ></breadcrumb>
+
+        <page-title>
             Herzlich Willkommen im Dashboard für Mitarbeiter!
-        </div>
+        </page-title>
     </employee-layout>
 </template>
 <script>
 import { defineComponent } from "vue";
 
 import EmployeeLayout from "@/Pages/Application/Employee/Shared/Layout.vue";
+import Breadcrumb from "@/Pages/Components/Breadcrumb.vue";
+
+import PageTitle from "@/Pages/Components/Content/PageTitle.vue";
 
 export default defineComponent({
     name: "Employee_Dashboard",
 
     components: {
         EmployeeLayout,
+        Breadcrumb,
+        PageTitle
     },
 });
 </script>

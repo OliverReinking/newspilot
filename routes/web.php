@@ -63,6 +63,27 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
             '/admin/dashboard',
             [DashboardAdminController::class, 'admin_index']
         )->name('admin.dashboard');
+        // ---------
+        // Processes
+        // ---------
+        Route::get(
+            '/admin/processes',
+            [DashboardAdminController::class, 'admin_processes']
+        )->name('admin.processes');
+        // -----
+        // Blogs
+        // -----
+        Route::get(
+            '/admin/blogs',
+            [DashboardAdminController::class, 'admin_blogs']
+        )->name('admin.blogs');
+        // ----------
+        // Statistics
+        // ----------
+        Route::get(
+            '/admin/statistics',
+            [DashboardAdminController::class, 'admin_statistics']
+        )->name('admin.statistics');
         // -----
         // Users
         // -----

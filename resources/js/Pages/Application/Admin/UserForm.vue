@@ -8,9 +8,8 @@
         Anzeige: route('admin.user.show', appuser.id),
       }"
     ></breadcrumb>
-    <div class="mt-4 mb-8 font-logo text-2xl text-extrabold">
-      Aktualisierung der Anwenderdaten
-    </div>
+
+    <page-title> Aktualisierung der Anwenderdaten </page-title>
 
     <section-form>
       <template #title>Anwenderdaten</template>
@@ -125,6 +124,8 @@ import { defineComponent } from "vue";
 import AdminLayout from "@/Pages/Application/Admin/Shared/Layout.vue";
 import Breadcrumb from "@/Pages/Components/Breadcrumb.vue";
 
+import PageTitle from "@/Pages/Components/Content/PageTitle.vue";
+
 import SectionForm from "@/Pages/Components/Content/SectionForm.vue";
 import SectionBorder from "@/Pages/Components/Content/SectionBorder.vue";
 
@@ -151,6 +152,7 @@ export default defineComponent({
   components: {
     AdminLayout,
     Breadcrumb,
+    PageTitle,
     SectionForm,
     SectionBorder,
     ButtonGroup,
