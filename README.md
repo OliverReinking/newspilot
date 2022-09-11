@@ -18,18 +18,17 @@ Damit du die Möglichkeit hast, die Entwicklung der Anwendungsplattform Newspilo
 ### Installation
 Die im Kapitel "Implementierung" beschriebenen Codeänderungen findest du im Branch "installation".  
 
+### Bewerbungsformular
+Das im Kapitel Anwendung "Homepage" beschriebene Bewerbungsformular findest du hier.
+
 ### Anwendung Homepage
 Die im Kapitel Anwendung "Homepage" beschriebenen Codeänderungen findest du im Branch "homepage".  
-Hier gibt es zusätzlich noch die Brances formular-01 und formular-02.  
 
 ### Anwendung Administrator
 Die im Kapitel Anwendung "Administrator" beschriebenen Codeänderungen findest du im Branch "administrator".  
 
 ### Anwendung Mitarbeiter
 Die im Kapitel Anwendung "Mitarbeiter" beschriebenen Codeänderungen findest du im Branch "employee".  
-
-### Anwendung Kunde
-Die im Kapitel Anwendung "Kunde" beschriebenen Codeänderungen findest du im Branch "customer".  
 
 ## Installation
 
