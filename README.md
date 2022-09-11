@@ -19,7 +19,7 @@ Damit du die Möglichkeit hast, die Entwicklung der Anwendungsplattform Newspilo
 Die im Kapitel "Implementierung" beschriebenen Codeänderungen findest du im Branch "installation".  
 
 ### Bewerbungsformular
-Das im Kapitel Anwendung "Homepage" beschriebene Bewerbungsformular findest du hier.
+Das im Kapitel Anwendung "Homepage" beschriebene Bewerbungsformular findest du im Branch "formular".
 
 ### Anwendung Homepage
 Die im Kapitel Anwendung "Homepage" beschriebenen Codeänderungen findest du im Branch "homepage".  
