@@ -70,7 +70,7 @@
             class="
               inline-block
               px-3
-              py-px
+              py-1
               mb-4
               text-xs
               font-semibold
