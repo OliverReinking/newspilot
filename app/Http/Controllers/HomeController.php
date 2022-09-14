@@ -51,7 +51,7 @@ class HomeController extends Controller
     }
     public function home_job_application_send(RequestJobApplication $request)
     {
-        // Ermittle die contactvalues
+        // Ermittle die job_application_values
         $job_application_values = collect();
         //
         $job_application_values->first_name = $request->first_name;
