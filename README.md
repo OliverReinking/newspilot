@@ -197,6 +197,16 @@ In diesem Abschnitt möchte ich den Funktionsumfang der Anwendungsplattform "New
 ![Anwendung Kunde - Startseite](https://github.com/OliverReinking/newspilot/blob/master/public/images/Newspilot_010.png)
 
 
+## Weitere Änderungen
+Folgende Änderungen wurden noch in dieses Package eingebaut, die nicht im Buch beschrieben wurden:
+
+### SmoohtScroll
+
+Pfad: js\Pages\Components\  
+Datei: SmoothScroll.vue  
+Verwendet in JobApplication.vue  
+
+
 ## License
 
 The Package **Newspilot** is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

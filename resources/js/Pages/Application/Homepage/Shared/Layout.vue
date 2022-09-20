@@ -137,6 +137,7 @@
 
     <!-- Content -->
     <section
+      id="app-layout-start"
       class="
         text-gray-800
         dark:text-white

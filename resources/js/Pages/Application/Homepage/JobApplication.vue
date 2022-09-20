@@ -164,9 +164,11 @@
             </input-container>
           </input-group>
 
+           <smooth-scroll href="#app-layout-start">
           <input-button type="button" @click.prevent="sendJobApplicationData">
             Bewerbungsdaten absenden
           </input-button>
+           </smooth-scroll>
         </form>
       </section>
     </div>
@@ -191,6 +193,8 @@ import InputCheckbox from "@/Pages/Components/Form/InputCheckbox.vue";
 import InputTextarea from "@/Pages/Components/Form/InputTextarea.vue";
 import InputError from "@/Pages/Components/Form/InputError.vue";
 
+import SmoothScroll from "@/Pages/Components/SmoothScroll.vue";
+
 export default defineComponent({
   name: "Homepage_JobApplication",
 
@@ -209,6 +213,7 @@ export default defineComponent({
     InputButton,
     InputTextarea,
     InputError,
+    SmoothScroll
   },
 
   props: {
