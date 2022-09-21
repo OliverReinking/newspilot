@@ -1,5 +1,14 @@
 <template>
-  <div class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white shadow-lg rounded-lg p-2">
+  <div
+    class="
+      bg-white
+      text-gray-900
+      dark:bg-gray-900 dark:text-white
+      shadow-lg
+      rounded-lg
+      p-2
+    "
+  >
     <div class="relative w-full flex flex-col items-center justify-center">
       <div class="h-6 sm:h-8 w-6 sm:w-8 text-sunprimary dark:text-nightprimary">
         <slot name="icon"></slot>
@@ -34,6 +43,11 @@
                 rounded-md
                 hover:bg-sunprimary-dark hover:text-on-sunprimary-dark
                 focus:outline-none focus:bg-sunprimary-dark
+                dark:bg-nightprimary
+                dark:text-on-nightprimary
+                dark:hover:bg-nightprimary-dark
+                dark:hover:text-on-nightprimary-dark
+                dark:focus:bg-nightprimary-dark
               "
             >
               <slot name="buttonOne"></slot>
@@ -56,6 +70,11 @@
                 rounded-md
                 hover:bg-sunprimary-dark hover:text-on-sunprimary-dark
                 focus:outline-none focus:bg-sunprimary-dark
+                dark:bg-nightprimary
+                dark:text-on-nightprimary
+                dark:hover:bg-nightprimary-dark
+                dark:hover:text-on-nightprimary-dark
+                dark:focus:bg-nightprimary-dark
               "
             >
               <slot name="buttonTwo"></slot>
