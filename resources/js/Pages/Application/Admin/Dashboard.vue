@@ -74,6 +74,8 @@
 <script>
 import { defineComponent } from "vue";
 
+import { Link } from "@inertiajs/inertia-vue3";
+
 import AdminLayout from "@/Pages/Application/Admin/Shared/Layout.vue";
 import Breadcrumb from "@/Pages/Components/Breadcrumb.vue";
 
@@ -90,6 +92,7 @@ export default defineComponent({
   name: "Admin_Dashboard",
 
   components: {
+    Link,
     AdminLayout,
     Breadcrumb,
     PageTitle,
