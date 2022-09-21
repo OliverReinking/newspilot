@@ -206,6 +206,15 @@ Pfad: js\Pages\Components\
 Datei: SmoothScroll.vue  
 Verwendet in JobApplication.vue  
 
+Zweck: Nach dem klicken eines Buttons scrollt die Anwendung nach oben.
+
+### NavigationCard
+
+Pfad: js\Pages\Components\  
+Datei: SmoothScroll.vue  
+Verwendet in Dashboard.vue der Anwendung Administrator
+
+Zweck: Element für das Dashboard.
 
 ## License
 

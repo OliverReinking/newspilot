@@ -43,10 +43,10 @@
               left-0
               right-0
               z-20
-              bg-gray-900
-              dark:bg-white
-              text-white
-              dark:text-gray-900
+              bg-gray-200
+              dark:bg-gray-900
+              text-gray-900
+              dark:text-gray-100
             "
           >
             <div class="lg:mr-12 p-2 text-center lg:text-right text-xs">

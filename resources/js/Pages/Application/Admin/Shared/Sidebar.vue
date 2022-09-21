@@ -15,7 +15,7 @@
                     : '-translate-x-full ease-in'
             "
             class="fixed inset-y-0 left-0 z-30 w-64 overflow-y-auto transition duration-1000
-                   transform bg-gray-100 dark:bg-gray-900 lg:translate-x-0 lg:static lg:inset-0"
+                   transform bg-gray-200 dark:bg-gray-900 lg:translate-x-0 lg:static lg:inset-0"
         >
             <div class="flex items-center justify-center mt-8">
                 <div class="flex items-center">

@@ -7,8 +7,8 @@
         rounded-lg
         shadow-xs
         overflow-hidden
-        bg-gray-100
-        dark:bg-gray-800
+        bg-white
+        dark:bg-gray-900
       "
     >
       <Link
@@ -43,8 +43,8 @@
         rounded-lg
         shadow-xs
         overflow-hidden
-        bg-gray-100
-        dark:bg-gray-800
+        bg-white
+        dark:bg-gray-900
       "
     >
       <statistic-value-content

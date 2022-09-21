@@ -9,7 +9,7 @@
       transition
       duration-1000
       transform
-      bg-gray-100
+      bg-gray-200
       dark:bg-gray-900
       border-b-2 border-gray-200
       dark:border-gray-600
