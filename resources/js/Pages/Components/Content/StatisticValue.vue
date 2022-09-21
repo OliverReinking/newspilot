@@ -5,7 +5,7 @@
       class="
         min-w-0
         rounded-lg
-        shadow-xs
+        shadow-lg
         overflow-hidden
         bg-white
         dark:bg-gray-900
@@ -41,7 +41,7 @@
       class="
         min-w-0
         rounded-lg
-        shadow-xs
+        shadow-lg
         overflow-hidden
         bg-white
         dark:bg-gray-900
