@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white shadow-lg rounded-lg p-2">
     <div class="relative w-full flex flex-col items-center justify-center">
-      <div class="h-6 sm:h-8 w-6 sm:w-8 text-accent">
+      <div class="h-6 sm:h-8 w-6 sm:w-8 text-sunprimary dark:text-nightprimary">
         <slot name="icon"></slot>
       </div>
 
@@ -29,11 +29,11 @@
                 transition-colors
                 duration-200
                 transform
-                bg-primary
-                text-on-primary
+                bg-sunprimary
+                text-on-sunprimary
                 rounded-md
-                hover:bg-hover-primary hover:text-hover-on-primary
-                focus:outline-none focus:bg-hover-primary
+                hover:bg-sunprimary-dark hover:text-on-sunprimary-dark
+                focus:outline-none focus:bg-sunprimary-dark
               "
             >
               <slot name="buttonOne"></slot>
@@ -51,11 +51,11 @@
                 transition-colors
                 duration-200
                 transform
-                bg-primary
-                text-on-primary
+                bg-sunprimary
+                text-on-sunprimary
                 rounded-md
-                hover:bg-hover-primary hover:text-hover-on-primary
-                focus:outline-none focus:bg-hover-primary
+                hover:bg-sunprimary-dark hover:text-on-sunprimary-dark
+                focus:outline-none focus:bg-sunprimary-dark
               "
             >
               <slot name="buttonTwo"></slot>
