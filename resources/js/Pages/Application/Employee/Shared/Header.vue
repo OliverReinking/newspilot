@@ -59,7 +59,7 @@
                 :alt="$page.props.user.name"
               />
             </dropdown-link>
-            <dropdown-link v-else with-icon="true">
+            <dropdown-link v-else :with-icon="true">
               {{ $page.props.user.name }}
             </dropdown-link>
           </template>
