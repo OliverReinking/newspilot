@@ -8,7 +8,7 @@
                        dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600
                        dark:ring-offset-gray-800"
                 :checked="modelValue"
-                @change="$emit('update:checked', $event.target.checked)"
+                @change="$emit('update:modelValue', $event.target.checked)"
             />
         </div>
         <div class="ml-3 text-sm">
@@ -27,7 +27,7 @@
 export default {
     name: "Form_InputCheckbox",
 
-    emits: ["update:checked"],
+    emits: ["update:modelValue"],
 
     props: {
         name: {
